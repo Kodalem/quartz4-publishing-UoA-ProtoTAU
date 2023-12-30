@@ -3,20 +3,18 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪴 Quartz 4.0",
+    pageTitle: "\udb86\udc94 UoA ProtoTAU Documentation",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
-    baseUrl: "quartz.jzhao.xyz",
+    analytics: null, //Let us not track people, okay?
+    baseUrl: "prototau.kodalem.com",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     theme: {
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "Maple Mono NF",
+        body: "Poppins",
+        code: "ProFont IIx Nerd Font Mono",
       },
       colors: {
         lightMode: {
@@ -30,14 +28,14 @@ const config: QuartzConfig = {
           highlight: "rgba(143, 159, 169, 0.15)",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
+          light: "rgba(22,20,26,0.73)",
+          lightgray: "rgba(52,47,61,0.73)",
+          gray: "rgba(91,82,107,0.73)",
           darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          dark: "#a2f3d4",
+          secondary: "rgba(70,147,148,0.81)",
+          tertiary: "#644dcc",
+          highlight: "rgba(3,12,89,0.3)",
         },
       },
     },
