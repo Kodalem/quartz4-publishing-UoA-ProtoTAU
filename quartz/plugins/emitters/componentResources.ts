@@ -179,6 +179,9 @@ export const ComponentResources: QuartzEmitterPlugin<Options> = (opts?: Partial<
         resources.css.push(googleFontHref(ctx.cfg.configuration.theme))
       } else if (fontOrigin === "local") {
         // let the user do it themselves in css
+        // Import the fonts from the local content directory of fonts folder
+        // and add them to the css file
+        resources.css.push("fonts.css")
       }
 
       addGlobalPageResources(ctx, resources, componentResources)
